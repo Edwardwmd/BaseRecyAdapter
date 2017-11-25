@@ -1,5 +1,8 @@
 package com.wmd.adapter.baserecyadapter.listener;
 
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+
 /**
  * 时间：2017/11/23/17：23
  * 作者：MingDe_Wu
@@ -9,5 +12,6 @@ package com.wmd.adapter.baserecyadapter.listener;
  */
 
 public interface OnItemClickListener {
-    void setOnItemClickListener(int position);
+    void setOnItemClickListener(View view, RecyclerView.ViewHolder holder, int position);
+    boolean onItemLongClick(View view, RecyclerView.ViewHolder holder, int position);
 }
